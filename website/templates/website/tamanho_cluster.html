@@ -14,8 +14,11 @@
     </div>
     <div class="col-md-6">
         {% if submetido %}
-            <p>Para um C/I de {{ form.data.c_i_db }} dB e um coeficiente de atenuação (n) de {{ form.data.n }} o tamanho
-                do cluster mínimo (Ncp) é de {{ resultado }}.</p>
+            <p>Para os seguintes dados:</p>
+            <p> - C/I de {{ form.data.c_i_db }} dB</p>
+            <p> - Coeficiente de atenuação (n) de {{ form.data.n }}</p>
+            <p></p>
+            <p>O tamanho do cluster mínimo (Ncp) é de {{ resultado }}</p>
         {% endif %}
 
     </div>

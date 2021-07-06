@@ -16,10 +16,14 @@
         {% if resultado == "Distância inválida." or  resultado == "Frequência inválida." or resultado == "Inputs inválidos." or resultado == "Hbe inválido." or resultado == "Hm inválido." and submetido %}
             <p>{{ resultado }}</p>
         {% elif submetido %}
-            <p>Para uma frequência de {{ form.data.frequencia }} MHz, um Hbe de {{ form.data.hbe }} metros, uma
-                distância de {{ form.data.distancia }} metros, um Hm de {{ form.data.hm }} metros e uma
-                cidade {{ form.data.tipoCidade }}, a mediana da atenuação de propagação (Lp) é de {{ resultado }}
-                dB.</p>
+            <p>Para os seguintes dados:</p>
+            <p> - Frequência de: {{ form.data.frequencia }} MHz</p>
+            <p> - Hbe de: {{ form.data.hbe }} Metros</p>
+            <p> - Distância de: {{ form.data.distancia }} Metros</p>
+            <p> - Hm de: {{ form.data.hm }} Metros</p>
+            <p> - Cidade: {{ form.data.tipoAmbiente }}</p>
+            <p></p>
+            <p>A mediana da atenuação de propagação (Lp) é de {{ resultado }} dB.</p>
         {% endif %}
 
     </div>

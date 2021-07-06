@@ -13,12 +13,12 @@
 
     </div>
     <div class="col-md-6">
-        {% if form.data.n == "1" and submetido %}
-            <p>Para um Tráfego Oferecido de {{ form.data.t }} Erlang e {{ form.data.n }} canal, a probabilidade de
-                bloqueio é de {{ resultado }}.</p>
-        {% elif submetido %}
-            <p>Para um Tráfego Oferecido de {{ form.data.t }} Erlang e {{ form.data.n }} canais, a probabilidade de
-                bloqueio é de {{ resultado }}.</p>
+        {% if submetido %}
+            <p>Para os seguintes dados:</p>
+            <p> - Tráfego Oferecido de {{ form.data.t }} Erlang</p>
+            <p> - {{ form.data.n }} canal/canais</p>
+            <p></p>
+            <p>A probabilidade de bloqueio é de {{ resultado }}</p>
         {% endif %}
 
     </div>

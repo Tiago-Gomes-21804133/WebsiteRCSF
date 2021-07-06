@@ -19,6 +19,12 @@
             <p>Para uma frequência de {{ form.data.frequencia }} MHz e uma distância de {{ form.data.distancia }}
                 metros, a mediana da atenuação de propagação (Lp) segundo o modelo de Walfisch-Ikegami é
                 de {{ resultado }} dB.</p>
+            <p>Para os seguintes dados:</p>
+            <p> - Frequência de: {{ form.data.frequencia }} MHz</p>
+            <p> - Distância de: {{ form.data.distancia }} Metros</p>
+            <p></p>
+            <p>Segundo o modelo de Walfisch-Ikegami, a mediana da atenuação de propagação (Lp) é de {{ resultado }}
+                dB.</p>
         {% endif %}
 
     </div>
