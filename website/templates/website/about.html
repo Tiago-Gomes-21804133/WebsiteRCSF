@@ -1,0 +1,14 @@
+{% extends 'website/layout.html' %}
+
+
+{% block main %}
+    <div class="col-md-8">
+        <h2>Sobre este website</h2>
+        <p>Website feito na UC de RCSF.</p>
+    </div>
+    <div class="col-md-4">
+        {% load static %}
+        <img src=" {% static 'website/images/prx.png' %}" alt="">
+    </div>
+{% endblock main %}
+      
